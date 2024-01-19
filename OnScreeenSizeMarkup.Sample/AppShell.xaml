@@ -6,9 +6,15 @@
     xmlns:local="clr-namespace:OnScreeenSizeMarkup.Sample"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        <ShellContent
+            Title="Style Sheet"
+            ContentTemplate="{DataTemplate local:StylePage}"
+            Route="StylePage" />
+    </TabBar>
 
 </Shell>
