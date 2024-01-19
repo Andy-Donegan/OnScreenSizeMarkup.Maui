@@ -18,6 +18,8 @@ public static class MauiProgram
 
         builder.Services.AddTransient<MainPage>();
         builder.Services.AddTransient<MainPageViewModel>();
+        builder.Services.AddTransient<StylePage>();
+        builder.Services.AddTransient<StylePageViewModel>();
 #if DEBUG
         builder.Logging.AddDebug();
 #endif
